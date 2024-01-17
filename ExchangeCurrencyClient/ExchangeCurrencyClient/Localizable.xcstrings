@@ -1,0 +1,51 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "Done" : {
+
+    },
+    "Error" : {
+
+    },
+    "Exchange Currency" : {
+
+    },
+    "exchangerates" : {
+
+    },
+    "From" : {
+
+    },
+    "Invalid parameters" : {
+
+    },
+    "Invalid response" : {
+
+    },
+    "Invalid URL" : {
+
+    },
+    "Loading rates..." : {
+
+    },
+    "OK" : {
+
+    },
+    "Rates by" : {
+
+    },
+    "Same destination currency" : {
+
+    },
+    "To" : {
+
+    },
+    "Unknown error" : {
+
+    }
+  },
+  "version" : "1.0"
+}
