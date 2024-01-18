@@ -37,7 +37,7 @@
 		907802BA2B57BC38007BA87C /* ExchangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907802B92B57BC38007BA87C /* ExchangeView.swift */; };
 		907802BC2B57BC39007BA87C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 907802BB2B57BC39007BA87C /* Assets.xcassets */; };
 		907802BF2B57BC39007BA87C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 907802BE2B57BC39007BA87C /* Preview Assets.xcassets */; };
-		907802C92B57BC39007BA87C /* ExchangeCurrencyClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907802C82B57BC39007BA87C /* ExchangeCurrencyClientTests.swift */; };
+		907802C92B57BC39007BA87C /* CurrencyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907802C82B57BC39007BA87C /* CurrencyViewModelTests.swift */; };
 		907802E22B57D580007BA87C /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 907802E12B57D580007BA87C /* Localizable.xcstrings */; };
 		907802E32B57D580007BA87C /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 907802E12B57D580007BA87C /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
@@ -72,7 +72,7 @@
 		907802BB2B57BC39007BA87C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		907802BE2B57BC39007BA87C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		907802C42B57BC39007BA87C /* ExchangeCurrencyClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeCurrencyClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		907802C82B57BC39007BA87C /* ExchangeCurrencyClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeCurrencyClientTests.swift; sourceTree = "<group>"; };
+		907802C82B57BC39007BA87C /* CurrencyViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModelTests.swift; sourceTree = "<group>"; };
 		907802E12B57D580007BA87C /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		907802ED2B580387007BA87C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -198,7 +198,7 @@
 		907802C72B57BC39007BA87C /* ExchangeCurrencyClientTests */ = {
 			isa = PBXGroup;
 			children = (
-				907802C82B57BC39007BA87C /* ExchangeCurrencyClientTests.swift */,
+				907802C82B57BC39007BA87C /* CurrencyViewModelTests.swift */,
 			);
 			path = ExchangeCurrencyClientTests;
 			sourceTree = "<group>";
@@ -329,7 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				907802C92B57BC39007BA87C /* ExchangeCurrencyClientTests.swift in Sources */,
+				907802C92B57BC39007BA87C /* CurrencyViewModelTests.swift in Sources */,
 				900675AD2B590516009092FD /* Date+Today.swift in Sources */,
 				900675A72B5904EB009092FD /* NetworkError.swift in Sources */,
 				900675B02B590531009092FD /* CurrencyRates.swift in Sources */,
