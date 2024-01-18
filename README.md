@@ -18,9 +18,13 @@ Welcome to the Currency Converter app! This iOS application allows users to conv
 
 The app is designed with a clear separation of concerns, utilizing a layered architecture for better maintainability and scalability. The components are organized logically to enhance code readability and modularity.
 
+***Developer comments:*** used pure MVVM, protocols separations for implementation switches
+
 ### 2. Used Libraries
 
 The application leverages relevant libraries to streamline development and improve efficiency. These libraries are chosen based on their compatibility with Swift and SwiftUI, ensuring a smooth integration process.
+
+***Developer comments:*** 0 external libraries
 
 ### 3. Error Handling
 
@@ -29,6 +33,12 @@ Robust error handling mechanisms are implemented throughout the app. From networ
 ### 4. Code Testability
 
 The codebase is structured with testability in mind. Unit tests are employed to verify the functionality of individual components, ensuring code reliability and facilitating future updates.
+
+**Developer comments:** added a few tests to show how easy it can be with current architecture
+
+### What can be improved?
+- Observed instead of ObservableObject
+- More tests
 
 ## Getting Started
 
