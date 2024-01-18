@@ -11,7 +11,7 @@ import SwiftUI
 struct ExchangeCurrencyClientApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ExchangeView()
         }
     }
     

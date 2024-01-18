@@ -4,6 +4,9 @@
     "" : {
 
     },
+    "Conversion failed" : {
+
+    },
     "Done" : {
 
     },
@@ -29,6 +32,9 @@
 
     },
     "Loading rates..." : {
+
+    },
+    "No connection" : {
 
     },
     "OK" : {
