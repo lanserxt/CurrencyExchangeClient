@@ -11,7 +11,29 @@ import SwiftUI
 /// Main View model
 final class CurrencyViewModel: ObservableObject {
     
-    private let currencyStorage = CurrencyStorage()
+    let currencyStorage: CurrencyStorageProtocol
+        
+    init(currencyStorage: CurrencyStorageProtocol = CurrencyStorage()) {
+        //Setting default values
+        if let fromDefsKey = UserDefaults.standard.string(forKey: Constants.UserDefaults.fromCurrency),
+           let currency = Currency(rawValue: fromDefsKey) {
+            fromCurrency = currency
+        } else {
+            fromCurrency = .euro
+        }
+        
+        if let fromDefsKey = UserDefaults.standard.string(forKey: Constants.UserDefaults.toCurrency),
+           let currency = Currency(rawValue: fromDefsKey) {
+            toCurrency = currency
+        } else {
+            toCurrency = .rub
+        }
+        
+        let fromDefsKey = UserDefaults.standard.float(forKey: Constants.UserDefaults.fromValue)
+        fromValue = Double(fromDefsKey)
+        self.currencyStorage = currencyStorage
+    }
+        
     
     //No AppStorage
     @Published
@@ -113,24 +135,6 @@ final class CurrencyViewModel: ObservableObject {
     @Published
     private(set) var isLoading: Bool = false
     
-    init() {
-        //Setting default values
-        if let fromDefsKey = UserDefaults.standard.string(forKey: Constants.UserDefaults.fromCurrency),
-           let currency = Currency(rawValue: fromDefsKey) {
-            fromCurrency = currency
-        } else {
-            fromCurrency = .euro
-        }
-        
-        if let fromDefsKey = UserDefaults.standard.string(forKey: Constants.UserDefaults.toCurrency),
-           let currency = Currency(rawValue: fromDefsKey) {
-            toCurrency = currency
-        } else {
-            toCurrency = .rub
-        }
-        
-        let fromDefsKey = UserDefaults.standard.float(forKey: Constants.UserDefaults.fromValue)
-        fromValue = Double(fromDefsKey)
-    }
+    
     
 }

@@ -40,6 +40,7 @@
 		907802C92B57BC39007BA87C /* CurrencyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907802C82B57BC39007BA87C /* CurrencyViewModelTests.swift */; };
 		907802E22B57D580007BA87C /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 907802E12B57D580007BA87C /* Localizable.xcstrings */; };
 		907802E32B57D580007BA87C /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 907802E12B57D580007BA87C /* Localizable.xcstrings */; };
+		90DC1CBF2B5A4AF30090C198 /* MockCurrencyStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC1CBE2B5A4AF30090C198 /* MockCurrencyStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		907802C82B57BC39007BA87C /* CurrencyViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModelTests.swift; sourceTree = "<group>"; };
 		907802E12B57D580007BA87C /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		907802ED2B580387007BA87C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		90DC1CBE2B5A4AF30090C198 /* MockCurrencyStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCurrencyStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				907802C82B57BC39007BA87C /* CurrencyViewModelTests.swift */,
+				90DC1CBE2B5A4AF30090C198 /* MockCurrencyStorage.swift */,
 			);
 			path = ExchangeCurrencyClientTests;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				900675962B590401009092FD /* CurrencyViewModel.swift in Sources */,
 				900675AA2B5904FE009092FD /* FailedResponse.swift in Sources */,
 				900675A12B590471009092FD /* CurrencyStorageProtocol.swift in Sources */,
+				90DC1CBF2B5A4AF30090C198 /* MockCurrencyStorage.swift in Sources */,
 				900675B92B5905A0009092FD /* Currency.swift in Sources */,
 				900675972B590403009092FD /* CurrencyStorage.swift in Sources */,
 			);

@@ -10,11 +10,16 @@ import Foundation
 /// Rates storing service
 final class CurrencyStorage: CurrencyStorageProtocol {
     
+    /// API Service to fetch new ones or outdated
+    private let apiService: APIServiceProtocol
+    
+    init(apiService: APIServiceProtocol = CurrencyAPIService()) {
+        self.apiService = apiService
+    }
+    
     @UserDefault(Constants.UserDefaults.rates)
     private var exchangeRates: [Currency: CurrencyRates]?
-    
-    /// API Service to fetch new ones or outdated
-    private let apiService: APIServiceProtocol = CurrencyAPIService()
+        
     
     func getExchangeRate(from: Currency, to: Currency) async throws -> Double? {
         if exchangeRates == nil {

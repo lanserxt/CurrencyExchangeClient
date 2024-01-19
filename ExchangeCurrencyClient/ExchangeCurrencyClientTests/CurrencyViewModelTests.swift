@@ -10,7 +10,7 @@ import XCTest
 
 final class CurrencyViewModelTests: XCTestCase {
 
-    private let viewModel = CurrencyViewModel()
+    private let viewModel = CurrencyViewModel(currencyStorage: MockCurrencyStorage())
     
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
